@@ -1,0 +1,39 @@
+{
+  "enable": {
+    "type": "bool",
+    "description": "启用语音",
+    "default": true
+  },
+  "backend": {
+    "type": "string",
+    "description": "语音后端",
+    "default": "azure",
+    "options": [
+      "azure",
+      "google"
+    ],
+    "hint": "azure=微软，google=谷歌"
+  },
+  "api_key": {
+    "type": "string",
+    "description": "API 密钥",
+    "default": ""
+  },
+  "region": {
+    "type": "string",
+    "description": "区域",
+    "default": "eastasia",
+    "hint": "Azure 填区域（如 eastasia），Google 可留空"
+  },
+  "voice_name": {
+    "type": "string",
+    "description": "音色",
+    "default": "zh-CN-XiaoxiuNeural",
+    "hint": "Azure 音色名或 Google 音色名"
+  },
+  "daily_limit": {
+    "type": "int",
+    "description": "每日上限",
+    "default": 0
+  }
+}
